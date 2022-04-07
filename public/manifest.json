@@ -20,5 +20,24 @@
    "url": "https://experimental-bare-app-mcammisa-securityscor.vercel.app/manifest.json",
    "developer": "mcammisa@securityscorecard.io",
    "logo_url": "https://example.com/assets/image.gif",
-   "namespace": "coty_bare_app"
+   "namespace": "coty_bare_app",
+   "signals": [
+      {
+         "id": "coty_bare_app.cot_signal",
+         "name": "test Cot signal",
+         "severity": "positive",
+         "factor": "application_security",
+         "short_description": "risk or application security description of this signal",
+         "long_description": "long description of this signal",
+         "recommendation": "how to remediate (if negative) or obtain (if positive) this signal",
+         "sent_by": "mcammisa",
+      "references": [{
+         "link": "<url of an article with more information>",
+         "text": "human-readable title for this link"
+      }, {
+         "link": "<url of another article with more information>",
+         "text": "human-readable title for this link"
+      }]
+      }
+   ]
 }

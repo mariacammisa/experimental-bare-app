@@ -2,8 +2,8 @@
    "name": "Coty Toretto App",
    "description": "Fast & Safe cot app",
    "long_description": "Toretto is a tiny and fast app only for experimental cotis purposes only",
-   "url": "https://mcammisa-experimental-bare-app.vercel.app/manifest.json",
-   "homepage": "https://mcammisa-experimental-bare-app.vercel.app",
+   "url": "https://experimental-bare-app-mcammisa-securityscor.vercel.app/manifest.json",
+   "homepage": "https://experimental-bare-app-mcammisa-securityscor.vercel.app",
    "developer": "mcammisa@securityscorecard.io",
    "logo_url": "https://example.com/assets/image.gif",
    "namespace": "coty_bare_app"

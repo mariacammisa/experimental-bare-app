@@ -2,7 +2,7 @@
    "name": "Coty Toretto App",
    "description": {
       "short":"Fast & Safe cot app",
-      "long": "Toretto is a tiny and fast app only for experimental cotis purposes only",
+      "long": "Toretto is a tiny and fast app only for experimental cotis purposes only"
    },
    "display_settings": {
       "primary_color": "#000000",
@@ -14,7 +14,7 @@
          "text": "a brief description",
          "url": "url to the image/gif or video"
       }],
-   "homepage_url": "https://experimental-bare-app-mcammisa-securityscor.vercel.app",,
+   "homepage_url": "https://experimental-bare-app-mcammisa-securityscor.vercel.app",
       "help_url": ""
    },
    "url": "https://experimental-bare-app-mcammisa-securityscor.vercel.app/manifest.json",

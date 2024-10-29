@@ -1,43 +1,75 @@
 {
-   "name": "Coty Toretto App",
+   "name": "Slack hacked",
+   "namespace": "slack",
+   "url": "http://localhost:8901/manifest.json",
+   "logo_url": "logo.png",
    "description": {
-      "short":"Fast & Safe cot app",
-      "long": "Toretto is a tiny and fast app only for experimental cotis purposes only"
+      "short": "Send notifications to a Slack channel based on events you set up in Rule Builder.",
+      "long": "Send notifications of events in Rule Builder to a Slack channel so team members get updates when a rule is triggered.\n\nSelect the slack channel to send the notification to on Rule Builder page.\n\nIn Slack, you will receive a Slack message describing the event, with a link to the related scorecard to view details."
    },
-   "display_settings": {
-      "primary_color": "#000000",
-      "secondary_color": "#FFFFFF",
-      "icon": "url to a Xpx by Xpx image",
-      "logo_url": "url to a Xpx by Xpx image",
-      "hero_images": [
-      {
-         "text": "a brief description",
-         "url": "url to the image/gif or video"
-      }],
-   "homepage_url": "https://experimental-bare-app-mcammisa-securityscor.vercel.app",
-      "help_url": ""
+   "tags": [
+      "productivity",
+      "slack",
+      "notifications",
+      "automation",
+      "slack.com"
+   ],
+   "developer": {
+      "name": "SecurityScorecard",
+      "website_url": "https://securityscorecard.com",
+      "privacy_url": "https://securityscorecard.com/privacy"
    },
-   "url": "https://experimental-bare-app-mcammisa-securityscor.vercel.app/manifest.json",
-   "developer": "mcammisa@securityscorecard.io",
-   "logo_url": "https://example.com/assets/image.gif",
-   "namespace": "coty_bare_app",
-   "signals": [
+   "actions": [
       {
-         "id": "coty_bare_app.cot_signal",
-         "name": "test Cot signal",
-         "severity": "positive",
-         "factor": "application_security",
-         "short_description": "risk or application security description of this signal",
-         "long_description": "long description of this signal",
-         "recommendation": "how to remediate (if negative) or obtain (if positive) this signal",
-         "sent_by": "mcammisa",
-      "references": [{
-         "link": "<url of an article with more information>",
-         "text": "human-readable title for this link"
-      }, {
-         "link": "<url of another article with more information>",
-         "text": "human-readable title for this link"
-      }]
+         "id": "notify_channel",
+         "name": "Notify Channel",
+         "url": "actions/notify_channel",
+         "settings_url": "actions/notify_channel/settings"
       }
-   ]
+   ],
+   "display_settings": {
+      "primary_color": "#ecb22e",
+      "logo_url": "logo.png",
+      "hero_images": [
+         {
+            "url": "https://ui-metadata.securityscorecard.io/apps-imagery/slack-hero.gif"
+         }
+      ],
+      "homepage_url": "https://slack.com",
+      "help_url": "https://support.securityscorecard.com/hc/en-us/articles/360057500772-Slack-App"
+   },
+   "install": {
+      "url": "https://platform-api.securityscorecard.tech/apps/slack/install",
+      "secrets": [
+         {
+            "key": "ACCESS_TOKEN",
+            "description": "a slack access token",
+            "value_required": true
+         },
+         {
+            "key": "SSC_ACCESS_TOKEN",
+            "description": "Access token, result of OAuth flow against Security Scorecard site",
+            "value_required": true
+         }
+      ],
+      "oauth": {
+         "redirect_uri": "https://platform-api.securityscorecard.tech/apps/slack/redirect-from-ssc",
+         "scopes": [
+            "issue:summary",
+            "user:read",
+            "users:list",
+            "invite:create",
+            "portfolio:read",
+            "portfolio:edit",
+            "score:summary",
+            "issue:summary",
+            "issue:details",
+            "issue:refute",
+            "history:score",
+            "report:create",
+            "report:read",
+            "rule:edit"
+         ]
+      }
+   }
 }

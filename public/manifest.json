@@ -1,26 +1,21 @@
 {
-   "id": "17156ca9-8cf9-4e99-a7b1-78b6950f0c57",
-   "url": "https://ssc-app-github.dev-fed-frontend.ssc.band/manifest.json",
-   "created_by": "system",
+   "url": "https://experimental-bare-app.vercel.app/manifest.json",
+   "created_by": "mccammisa",
    "created_at": "2023-01-18T22:51:30.865Z",
    "public": true,
    "organization_id": "0a85b6ce-1b11-5f5d-90d1-7e3ec31cad1b",
-   "name": "Github",
-   "namespace": "github",
+   "name": "experimental app",
+   "namespace": "exapp",
    "description": {
       "short": "bhavukjain1-short",
       "long": "bhavukjain1-long"
    },
    "tags": [
-      "compliance_signal",
-      "ff_compliance360",
-      "github",
       "it_service_management",
-      "productivity",
-      "signals"
+      "productivity"
    ],
    "developer": {
-      "name": "Security Scorecard",
+      "name": "SecurityScorecard",
       "website_url": "javascript:alert(1)"
    },
    "display_settings": {
@@ -54,23 +49,5 @@
    },
    "installed_at": "2024-10-07T10:10:47.384Z",
    "configuration_complete": true,
-   "signals": [
-      {
-         "id": "github.compliance",
-         "name": "Github",
-         "severity": "info",
-         "factor": "dns_health",
-         "long_description": "bhavukjain1_long",
-         "short_description": "bhavukjain1_short",
-         "recommendation": "Create new policy with restricted access",
-         "references": [
-            {
-               "link": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/es/iam/",
-               "text": "Github Services: IAM"
-            }
-         ],
-         "my_scorecard_only": false
-      }
-   ],
    "installation_next_url": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/authorize?installation=b416dedf-f921-4766-b82d-eed640199f51&username=test1%40bhavukjain.com"
 }

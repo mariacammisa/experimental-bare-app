@@ -1,32 +1,58 @@
 {
-   "name": "Netskope CEEEE",
-   "namespace": "netskope_ce_are",
+   "id": "e3115e8e-f606-4329-a624-caa01f66b104",
+   "url": "https://subscriptions.dev.ssc.camp/apps/e3115e8e-f606-4329-a624-caa01f66b104",
+   "created_by": "esio@securityscorecard.io",
+   "created_at": "2024-10-14T12:29:49.244Z",
+   "organization_id": "7055e42a-0003-5d88-a8c2-4a945cb41c3a",
+   "name": "TEST CHANGE",
+   "namespace": "b4b19d42_e7a1_44be_9352_f0eaf596d14c",
    "description": {
-      "long": "Netskope Cloud Exchange App Risk Exchange SSC plugin pushes Netskope CCI data as tuned by the Netskope admin into the private application listing in SSC. Scores vary on a scale from 100 (good) to 0 (terrible).",
-      "short": "Netskope Cloud Exchange App Risk Exchange SSC plugin pushes Netskope CCI data"
+      "short": "t",
+      "long": "t"
    },
-   "displaySettings": {
-      "logoUrl": "https://docs.netskope.com/RefDocs/CE/NetskopeStackedLogo-SSC-600x600.png",
-      "homepageUrl": "https://docs.netskope.com/en/netskope-cloud-exchange.html"
-   },
+   "tags": [
+      "metrics"
+   ],
    "developer": {
-      "websiteUrl": "https://www.netskope.com/products/cloud-exchange"
+      "name": "esio@securityscorecard.io",
+      "website_url": "https://securityscorecard.com",
+      "privacy_url": "https://securityscorecard.com",
+      "terms_of_use_url": "https://securityscorecard.com"
    },
-   "url": "https://docs.netskope.com/RefDocs/CE/ce_manifest_ssc.json",
-   "signals": [
+   "display_settings": {
+      "logo_url": "https://platform.securityscorecard.io/images/ssc-logo.png",
+      "homepage_url": "https://securityscorecard.com",
+      "help_url": "https://securityscorecard.com"
+   },
+   "metrics": [
       {
-         "id": "netskope_ce_are.cci",
-         "name": "Netskope Security Cloud Confidence Index",
-         "severity": "info",
-         "factor": "application_security",
-         "sent_by": "4733b2f0-8d1a-11ed-b8a1-a51f26c052f2",
-         "shortDescription": "This is a Netskope finding that shows the application's risk to corporate data and privacy.",
-         "longDescription": "The Netskope Cloud Confidence Index™ (CCI) is a database of more than 54,000 cloud apps that Netskope has evaluated based on 48+ objective criteria adapted from Cloud Security Alliance Guidance. These criteria measure apps enterprise-readiness, taking into consideration an apps security, audit-ability, and business continuity and are delivered as a score for each application. Learn more here https://docs.netskope.com/en/cloud-confidence-index.html",
-         "recommendation": "Netskope recommends carefully assessing the need to use any application with a CCI score below 60 or a CCL below Medium",
-         "references": [
+         "id": "framework",
+         "name": "NewTestEmma",
+         "tags": [
+            "compliance_framework",
+            "COMPLIANCE360",
+            "custom_framework"
+         ],
+         "short_description": "t",
+         "long_description": "t",
+         "expressions": [
             {
-               "link": "https://docs.netskope.com/en/cloud-confidence-index.html",
-               "text": "Learn more about Cloud Confidence Index"
+               "key": "Control Key 1",
+               "name": "Control Name 2",
+               "source": "ok(combine([]))",
+               "specification": "Description Control 1"
+            },
+            {
+               "key": "Control Key 2",
+               "name": "Control Name 2",
+               "source": "ok(combine([]))",
+               "specification": "Description Control 2"
+            },
+            {
+               "key": "Control Key 3",
+               "name": "Control Name 3",
+               "source": "ok(combine([]))",
+               "specification": "Description Control 3"
             }
          ]
       }

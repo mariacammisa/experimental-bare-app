@@ -1,76 +1,68 @@
 {
-   "id": "17156ca9-8cf9-4e99-a7b1-78b6950f0c57",
-   "url": "https://ssc-app-github.prod.ssc.camp/manifest.json",
-   "created_by": "system",
-   "created_at": "2023-01-18T22:51:30.865Z",
-   "public": true,
-   "organization_id": "0a85b6ce-1b11-5f5d-90d1-7e3ec31cad1b",
-   "name": "Github",
+   "name": "Github.",
    "namespace": "github",
+   "url": "https://ssc-app-github.prod.ssc.camp/manifest.json",
    "description": {
-      "short": "bhavukjain1-short",
-      "long": "bhavukjain1-long"
-   },
-   "tags": [
-      "compliance_signal",
-      "ff_compliance360",
-      "github",
-      "it_service_management",
-      "productivity",
-      "signals"
-   ],
-   "developer": {
-      "name": "Security Scorecard",
-      "website_url": "javascript:alert(1)"
+      "short": "Automatically gather compliance signals from Github based configuration.",
+      "long": "Our marketplace app with Github is designed to help businesses stay compliant with various regulations and requirements. The app collects and stores compliance information from vendors and sellers, ensuring that all products and services offered on the platform meet the necessary standards.\n\nIn addition to collecting and verifying compliance information, the app also provides automation and notifications to help stay up-to-date on any changes or updates to regulations. This avoid potential non-compliance issues and maintain a good standing on the platform.\n\nOverall, our integration with Github is a valuable tool for businesses looking to streamline their compliance processes and ensure that they are meeting all necessary requirements."
    },
    "display_settings": {
       "primary_color": "#17494D",
       "secondary_color": "#17494D",
-      "logo_url": "https://7iqzk434uoje2ujw9rd65502mtspgf44.oastify.com/apps/17156ca9-8cf9-4e99-a7b1-78b6950f0c57/bhavukjain1.png",
+      "logo_url": "logo.png",
       "hero_images": [
          {
-            "text": "<img src=x onerror=alert(1)>",
-            "url": "<img src=x onerror=alert(1)>"
+            "text": "Presentation video",
+            "url": "https://www.youtube.com/watch?v=pBy1zgt0XPc"
          }
       ],
-      "homepage_url": "javascript:alert(1)"
+      "homepage_url": "https://www.githubservice.com/"
    },
+   "developer": {
+      "name": "Security Scorecard",
+      "website_url": "https://securityscorecard.io"
+   },
+   "tags": [
+      "productivity",
+      "github",
+      "it_service_management",
+      "compliance_signal",
+      "ff_COMPLIANCE360"
+   ],
    "install": {
-      "url": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/authorize",
+      "url": "https://platform-api.securityscorecard.io/apps/github/authorize",
       "secrets": [
          {
             "key": "INSTALLATION",
             "description": "Reference id to srv-subscriptions",
-            "value_required": false
+            "valueRequired": true
          }
       ],
       "oauth": {
-         "redirect_uri": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/install",
+         "redirect_uri": "https://platform-api.securityscorecard.io/apps/github/install",
          "scopes": [
             "issue:summary",
             "user:read"
          ]
       }
    },
-   "installed_at": "2024-10-07T10:10:47.384Z",
-   "configuration_complete": true,
+   "hook_url": "https://platform-api.securityscorecard.io/apps/github/hooks",
    "signals": [
       {
          "id": "github.compliance",
          "name": "Github",
          "severity": "info",
          "factor": "dns_health",
-         "long_description": "bhavukjain1_long",
-         "short_description": "bhavukjain1_short",
+         "shortDescription": "Ensure IAM policy should not grant full access to service",
+         "longDescription": "Checks if github Identity and Access Management (IAM) policies grant permissions to all actions on individual github resources. The rule is non complaint if the managed IAM policy allows full access to at least 1 github service.",
          "recommendation": "Create new policy with restricted access",
+         "sentBy": "0dc814c0-ae26-11ed-a9da-67ac9a5d48c4",
          "references": [
             {
-               "link": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/es/iam/",
+               "link": "https://github.amazon.com/es/iam/",
                "text": "Github Services: IAM"
             }
-         ],
-         "my_scorecard_only": false
+         ]
       }
-   ],
-   "installation_next_url": "https://0uvswxfx6hv7envplkpzhycvym4hs7gw.oastify.com/apps/github/authorize?installation=b416dedf-f921-4766-b82d-eed640199f51&username=test1%40bhavukjain.com"
+   ]
 }

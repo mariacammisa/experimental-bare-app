@@ -2,16 +2,8 @@
    "name": "Segev Test2",
    "namespace": "agile_blue",
    "description": {
-      "short": "Segev Test is a SOC-as-a-Service platform that’s proven to detect threats
-faster and more accurately across your entire digital infrastructure and cloud","long": "\nSegev Test is a 24/7 SOC-as-a-Service, SOAR and EDR providing managed breach
-protection including monitoring, detection, and automated response to secure your cloud,
-network, and endpoints.\n\nFirst, we combine user behavior analytics and machine learning to
-detect anomalous behaviors in both devices and humans. Next, our predictive analytics and
-cyber risk scoring prioritizes risks \nbased on patterns and trends. Finally, our proprietary
-Silencer technology reduces false positives by 95%, so we can focus on real threats.\n\nOur
-tech is intelligent and automated, but we take a custom approach for every client we work
-with, analyzing and detecting exactly what you need it to. Our team of cyber experts are
-always \njust a call away. You can rest easy because we’ve got this.\n"
+      "short": "Segev Test is a SOC-as-a-Service platform that’s proven to detect threats faster and more accurately across your entire digital infrastructure and cloud",
+"long": "\nSegev Test is a 24/7 SOC-as-a-Service, \n"
    },
    "display_settings": {
       "primary_color": "#19AFD2",

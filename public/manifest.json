@@ -37,6 +37,6 @@
       "vulernability_managment",
       "external_integrations"
    ],
-   "url": "https://ui-metadata.securityscorecard.tech/apps/agile-blue/manifest.json",
+   "url": "https://ui-metadata.securityscorecard.qa/apps/agile-blue/manifest.json",
    "logo_url": "logo.png"
 }

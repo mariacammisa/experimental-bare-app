@@ -1,49 +1,38 @@
 {
-   "url": "https://ssc-app-hacknotice.prod.ssc.camp/manifest.json",
-   "name": "HackNotice.",
-   "tags": [
-      "hacknotice.com",
-      "partner_provided_data",
-      "signals"
-   ],
-   "signals": [
-      {
-         "id": "hacknotice.report",
-         "name": "HackNotice Report",
-         "factor": "leaked_information",
-         "sentBy": "c14b5630-c569-11eb-acd5-bf9829aea08d",
-         "severity": "info",
-         "references": [
-            {
-               "link": "https://platform-api.securityscorecard.io/apps/hacknotice/learn-more.pdf",
-               "text": "HackNotice - Learn more"
-            }
-         ],
-         "recommendation": "Review the findings and take preventive steps to secure your organization.",
-         "longDescription": "This issue, provided by our partner HackNotice, indicates that there may be leaked information about this company. HackNotice scours the dark web to alert employees of vulnerabilities, compromised information, and data breaches in real-time. Findings under this issue may indicate leaked email addresses, passwords, PII, phone numbers, IP addresses, and other information that hackers may use to specifically target employees for spear phishing campaigns, or directly take over their accounts.",
-         "shortDescription": "Potential leaked information that can be used to target employees for spear phishing campaigns or account takeover."
-      }
-   ],
-   "developer": {
-      "name": "Security Scorecard",
-      "websiteUrl": "https://securityscorecard.io"
-   },
-   "namespace": "hacknotice",
+   "name": "AgileBlue",
+   "namespace": "agile_blue",
    "description": {
-      "long": "Get access to actionable threat intelligence and darknet insights with the HackNotice integration for SecurityScorecard. HackNotice scours the dark web to alert employees of vulnerabilities, compromised information, and data breaches in real-time. By activating the integration, you will see 50 recent results for your domain.\n\nResults include: leaked email addresses, passwords, PII, phone numbers, IP addresses and other information that hackers may use to specifically target employees for spear phishing campaigns, or directly take over their accounts. To see how else you can use this information, and how HackNotice helps organizations create a culture of security, visit us on our website at https://hacknotice.com.\n\nIdentify accounts vulnerable to account takeover attacks.\n * Identify employees vulnerable to phishing / spear phishing attacks.\n * Identify confidential information that has been made public.\n * Identify sensitive information that hackers could use for financial, device, or physical fraud.",
-      "short": "The easiest way to find out when hackers steal your data or leak your identity."
+      "short": "AgileBlue is a SOC-as-a-Service platform that’s proven to detect threats faster and more accurately across your entire digital infrastructure and cloud",
+      "long": "\nAgileBlue is a 24/7 SOC-as-a-Service, SOAR and EDR providing managed breach protection including monitoring, detection, and automated response to secure your cloud, network, and endpoints.\n\nFirst, we combine user behavior analytics and machine learning to detect anomalous behaviors in both devices and humans. Next, our predictive analytics and cyber risk scoring prioritizes risks\nbased on patterns and trends. Finally, our proprietary Silencer technology reduces false positives by 95%, so we can focus on real threats.\n\nOur tech is intelligent and automated, but we take a custom approach for every client we work with, analyzing and detecting exactly what you need it to. Our team of cyber experts are always\njust a call away. You can rest easy because we’ve got this.\n"
    },
-   "displaySettings": {
-      "helpUrl": "https://support.securityscorecard.com/hc/en-us/articles/4403365404059-HackNotice-App",
-      "logoUrl": "logo.png",
-      "heroImages": [
+   "display_settings": {
+      "primary_color": "#19AFD2",
+      "secondary_color": "",
+      "icon": "",
+      "logo_url": "logo.png",
+      "hero_images": [
          {
-            "url": "https://www.youtube.com/watch?v=_IViMlVo8h0",
-            "text": "Presentation video"
+            "text": "AgileBlue Hero Image1",
+            "url": "hero1.png"
          }
       ],
-      "homepageUrl": "https://go.hacknotice.com/securityscorecard-marketplace",
-      "primaryColor": "#17494D",
-      "secondaryColor": "#17494D"
-   }
+      "homepage_url": "https://agileblue.com/"
+   },
+   "developer": {
+      "name": "Security Scorecard",
+      "website_url": "https://securityscorecard.io",
+      "privacy_url": "https://website.com/privacy",
+      "terms_of_use_url": "https://website.com/app-tos"
+   },
+   "refute_url": "",
+   "install": {
+      "url": "https://securityscorecard.io",
+      "external": true
+   },
+   "tags": [
+      "vulernability_managment",
+      "external_integrations"
+   ],
+   "url": "https://ui-metadata.securityscorecard.qa/apps/agile-blue/manifest.json",
+   "logo_url": "logo.png"
 }

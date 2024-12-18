@@ -1,22 +1,34 @@
 {
-   "name": "AgileBlue",
+   "name": "Segev Test2",
    "namespace": "agile_blue",
    "description": {
-      "short": "AgileBlue is a SOC-as-a-Service platform that’s proven to detect threats faster and more accurately across your entire digital infrastructure and cloud",
-      "long": "\nAgileBlue is a 24/7 SOC-as-a-Service, SOAR and EDR providing managed breach protection including monitoring, detection, and automated response to secure your cloud, network, and endpoints.\n\nFirst, we combine user behavior analytics and machine learning to detect anomalous behaviors in both devices and humans. Next, our predictive analytics and cyber risk scoring prioritizes risks\nbased on patterns and trends. Finally, our proprietary Silencer technology reduces false positives by 95%, so we can focus on real threats.\n\nOur tech is intelligent and automated, but we take a custom approach for every client we work with, analyzing and detecting exactly what you need it to. Our team of cyber experts are always\njust a call away. You can rest easy because we’ve got this.\n"
+      "short": "Segev Test is a SOC-as-a-Service platform that’s proven to detect threats
+faster and more accurately across your entire digital infrastructure and cloud","long": "\nSegev Test is a 24/7 SOC-as-a-Service, SOAR and EDR providing managed breach
+protection including monitoring, detection, and automated response to secure your cloud,
+network, and endpoints.\n\nFirst, we combine user behavior analytics and machine learning to
+detect anomalous behaviors in both devices and humans. Next, our predictive analytics and
+cyber risk scoring prioritizes risks \nbased on patterns and trends. Finally, our proprietary
+Silencer technology reduces false positives by 95%, so we can focus on real threats.\n\nOur
+tech is intelligent and automated, but we take a custom approach for every client we work
+with, analyzing and detecting exactly what you need it to. Our team of cyber experts are
+always \njust a call away. You can rest easy because we’ve got this.\n"
    },
    "display_settings": {
       "primary_color": "#19AFD2",
       "secondary_color": "",
       "icon": "",
-      "logo_url": "logo.png",
+      "logo_url": "",
       "hero_images": [
          {
-            "text": "AgileBlue Hero Image1",
-            "url": "hero1.png"
+            "text": "Segev Test Hero Image1",
+            "url": "https://089b-34-226-205-51.ngrok-free.app.com/test"
+         },
+         {
+            "text": "Segev Test Hero Image2",
+            "url": "hero2.png"
          }
       ],
-      "homepage_url": "https://agileblue.com/"
+      "homepage_url": "https://089b-34-226-205-51.ngrok-free.app.com/"
    },
    "developer": {
       "name": "Security Scorecard",
@@ -33,6 +45,6 @@
       "vulernability_managment",
       "external_integrations"
    ],
-   "url": "https://ui-metadata.securityscorecard.qa/apps/agile-blue/manifest.json",
+   "url": "https://ui-metadata.securityscorecard.io/apps/agile-blue/manifest.json",
    "logo_url": "logo.png"
 }
